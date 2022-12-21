@@ -6,6 +6,7 @@ PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only
 
 echo $($PSQL "TRUNCATE students, majors, courses, majors_courses");
 
+# cat courses_test.csv | while IFS="," read MAJOR COURSE
 cat courses.csv | while IFS="," read MAJOR COURSE
 do
     if [[ $MAJOR != major ]]
@@ -49,7 +50,7 @@ do
     fi
 done
 
-cat students_test.csv | while IFS="," read FIRST LAST MAJOR GPA
+cat students.csv | while IFS="," read FIRST LAST MAJOR GPA
 do
     # echo $FIRST;
     if [[ $FIRST != first_name ]]
