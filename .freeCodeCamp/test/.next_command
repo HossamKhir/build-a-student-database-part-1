@@ -73,3 +73,12 @@ history -a
 ./insert_data.sh
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+psql students freecodecamp -X --tuples-only --no-align -c "SELECT courses.csv insert_data.sh learn-sql-by-building-a-student-database-part-1 students.csv FROM majors"
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+psql students freecodecamp -X --tuples-only --no-align -c "SELECT major_id FROM majors"
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+psql students freecodecamp -X --tuples-only --no-align -c "SELECT major_id FROM majors;"
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
