@@ -35,3 +35,8 @@ git log
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
 psql students freecodecamp
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+touch insert_data.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
