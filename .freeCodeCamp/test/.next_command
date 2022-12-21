@@ -40,3 +40,9 @@ history -a
 touch insert_data.sh
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+git add insert_data.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+chmod +x insert_data.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
