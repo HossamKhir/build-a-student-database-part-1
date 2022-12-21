@@ -34,6 +34,7 @@ do
             if [[ $INSERT_COURSE_RESULT == "INSERT 0 1" ]]; then
                 echo "Inserted into courses, $COURSE";
             fi
+        COURSE_ID=$($PSQL "SELECT course_id FROM courses WHERE course='$COURSE'");
         fi
         # insert into majors_courses
     fi
