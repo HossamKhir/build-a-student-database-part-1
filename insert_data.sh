@@ -4,6 +4,7 @@
 
 PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
 
+# cat courses.csv | while IFS="," read MAJOR COURSE
 cat courses_test.csv | while IFS="," read MAJOR COURSE
 do
     # get major_id
