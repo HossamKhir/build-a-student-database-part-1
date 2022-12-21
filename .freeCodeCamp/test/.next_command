@@ -20,3 +20,18 @@ git commit -m 'feat: added csv files'
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
 psql postgres freecodecamp
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+pg_dump -u freecodecamp --dbname=students > s.sql
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+pg_dump --user=freecodecamp --dbname=students > s.sql
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+rm s.sql students.sql
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+git log
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+psql students freecodecamp
