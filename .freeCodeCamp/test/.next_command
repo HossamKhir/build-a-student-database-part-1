@@ -82,3 +82,6 @@ history -a
 psql students freecodecamp -X --tuples-only --no-align -c "SELECT major_id FROM majors;"
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+./insert_data.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
